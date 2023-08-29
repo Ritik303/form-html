@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style="background-color: black;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 200px;
+        }
+        #c{
+            width: 20px;
+        }
+        select{
+            width: 200px;
+        }
+        /* body{
+            background-image: linear-gradient(red, yellow);
+
+        } */
+        .angry-animate{
+-webkit-animation:shake 4s ease 0s 1 normal;
+-moz-animation:shake 4s ease 0s 1 normal;
+-ms-animation:shake 4s ease 0s 1 normal;
+animation:shake 4s ease 0s 1 normal;
+}
+
+@-webkit-keyframes shake {
+0%{ transform: rotate(-15deg); -webkit-transform: rotate(-15deg); }
+2%{ transform: rotate(15deg); -webkit-transform: rotate(15deg); }
+4%{ transform: rotate(-18deg); -webkit-transform: rotate(-18deg); }
+6%{ transform: rotate(18deg); -webkit-transform: rotate(18deg); }
+8%{ transform: rotate(-22deg); -webkit-transform: rotate(-22deg); }
+10%{ transform: rotate(22deg); -webkit-transform: rotate(22deg); }
+12%{ transform: rotate(-18deg); -webkit-transform: rotate(-18deg); }
+14%{ transform: rotate(18deg); -webkit-transform: rotate(18deg); }
+16%{ transform: rotate(-12deg); -webkit-transform: rotate(-12deg); }
+18%{ transform: rotate(-12deg); -webkit-transform: rotate(-12deg); }
+20%{ transform: rotate(0deg); -webkit-transform: rotate(0deg); }
+}
+
+@keyframes shake {
+0%{ transform: rotate(-15deg); -ms-transform: rotate(-15deg); }
+2%{ transform: rotate(15deg); -ms-transform: rotate(15deg); }
+4%{ transform: rotate(-18deg); -ms-transform: rotate(-18deg); }
+6%{ transform: rotate(18deg); -ms-transform: rotate(18deg); }
+8%{ transform: rotate(-22deg); -ms-transform: rotate(-22deg); }
+10%{ transform: rotate(22deg); -ms-transform: rotate(22deg); }
+12%{ transform: rotate(-18deg); -ms-transform: rotate(-18deg); }
+14%{ transform: rotate(18deg); -ms-transform: rotate(-18deg); }
+16%{ transform: rotate(-12deg); -ms-transform: rotate(-12deg); }
+18%{ transform: rotate(-12deg); -ms-transform: rotate(-12deg); }
+20%{ transform: rotate(0deg); -ms-transform: rotate(0deg); }
+
+}
+table{
+    -webkit-box-shadow:0px 0px 50px 40px #0400ff ;
+-moz-box-shadow:0px 0px 50px 40px #0400ff ;
+box-shadow:0px 0px 50px 40px #0400ff ;
+}   
+
+
+    </style>    
+</head>
+<body class="angry-animate" style=" display: flex; align-items: center;flex-direction: column; ">
+   
+   <form style="border: 5px solid black;">
+    <h1 style="background-color:black;color: white;"><header>New Guest Entry</header></h1> 
+   <table style="background-color:#4F6D7A;color: white;">
+    <tr>
+        <td >
+            Reg No.
+            <br>
+            <input type="number" name="num" readonly="" style="background-color: aquamarine;">
+        </td>
+        <td>
+            Invoice No.
+            <br>
+            <input type="text" name="num1" value="E-000001" readonly=""style="background-color: aquamarine;">
+        </td>
+    </tr>
+    <tr>
+        <td>Check in
+        <br>
+        <input type="date" name="checkin">
+        </td>
+        <td>
+            Expected check out
+            <br>
+            <input type="date" name="checkout">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Room type <br>
+            <select name="type">
+                <option value="r1" disabled="" selected="">Choose..</option>
+            </select>
+        </td>
+        <td>
+            Meal plan <br>
+            <select name="type">
+                <option value="r2" disabled="" selected="">Choose..</option>
+            </select>
+        </td>
+    </tr>
+        <td>
+            Room Number <br>
+            <select name="type">
+                <option value="r3" disabled="" selected="">Choose..</option>
+            </select>
+        </td>
+            <td>
+                Guest Booking <br>
+                <select name="type">
+                    <option value="r4" >Direct booking</option>
+                </select>
+            </td>
+    </tr>
+    <tr>
+        <td>
+            Guest type <br>
+            <select name="type">
+                <option value="r5">Tourist</option>
+            </select>
+        </td>
+        <td>
+            Bill to <br>
+            <input id="c" type="radio" name="cust">Customer
+            <input id="c" type="radio" name="cust">Company
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Company name <br>
+            <input type="Text" name="com" placeholder="company name">
+        </td>
+        <td>
+            Full name <br>
+            <input type="Text" name="co" placeholder="full name ">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Email <br>
+            <input type="email" name="Email">
+        </td>
+        <td>
+            Mobile number <br>
+            <input type="number" name="mob">
+        </td>
+    </tr>
+    <tr>
+        <td>VPIND</td>
+        <td>
+            Passport number <br>
+            <input type="number" name="passport">
+        </td>
+    </tr>
+    <tr><td>
+        Nationality <br>
+        <select name="nationality">
+            <option value="n1" disabled="" selected="">-select me-</option>
+        </select>
+        </td>
+        <td>
+            Country of Residence <br>
+            <select name="Country">
+                <option value="n2" disabled="" selected="">-select me-</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            D.O.B <br>
+            <input type="date" name="dob">
+        </td>
+        <td>
+            Profession <br>
+            <input type="text" name="proff">
+        </td>
+    </tr>
+    <tr>
+        <td>No. of pax <br>
+        <input type="number" name="passenger">
+        </td>
+        <td>
+            Group <br>
+            <select>
+                <option value="n3">no</option>
+                <option value="n4">yes</option>
+            </select>
+        </td>
+    </tr>
+
+   </table>
+   <footer><input type="submit" name="submit" style="background-color: yellow;"></footer>
+   </form>
+   
+</body>
+</html>
